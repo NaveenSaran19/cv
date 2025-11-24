@@ -298,60 +298,103 @@ section h2:hover::after {
 
 /* Experience Section */
 .timeline {
-  position: relative;
-  padding-left: 3.5rem;
+  position: relative;
+  padding-left: 3.5rem;
 }
+
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 1.5rem;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: linear-gradient(to bottom, #facc15, #1e3a8a);
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(to bottom, #facc15, #1e3a8a);
 }
+
 .timeline-item {
-  position: relative;
-  margin-bottom: 3rem;
+  position: relative;
+  margin-bottom: 3rem;
 }
+
 .timeline-year {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #facc15;
-  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #facc15;
+  margin-bottom: 0.8rem;
 }
+
 .timeline-dot {
-  position: absolute;
-  left: -2rem;
-  top: 0.6rem;
-  width: 16px;
-  height: 16px;
-  background-color: #fef3c7;
-  border-radius: 50%;
-  border: 3px solid #1e3a8a;
-  transition: transform 0.3s ease;
+  position: absolute;
+  left: -2rem;
+  top: 0.6rem;
+  width: 16px;
+  height: 16px;
+  background-color: #fef3c7;
+  border-radius: 50%;
+  border: 3px solid #1e3a8a;
+  transition: transform 0.3s ease;
 }
+
 .timeline-item:hover .timeline-dot {
-  transform: scale(1.3);
+  transform: scale(1.3);
 }
+
 .timeline-content {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
 }
+
 .timeline-content:hover {
-  transform: translateX(15px);
+  transform: translateX(15px);
 }
+
 .timeline-content h3 {
-  font-size: 1.6rem;
-  color: #1e3a8a;
-  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  color: #1e3a8a;
+  margin-bottom: 0.8rem;
 }
+
 .timeline-content p {
-  font-size: 1.1rem;
-  color: #4b5563;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+/* Education Section */
+.edu-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px) rotateX(5deg);
+}
+
+.edu-year {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #facc15;
+  min-width: 140px;
+}
+
+.edu-info h3 {
+  font-size: 1.6rem;
+  color: #1e3a8a;
+  margin-bottom: 0.8rem;
+}
+
+.edu-info p {
+  font-size: 1.1rem;
+  color: #4b5563;
 }
 
 /* Contact Section */
@@ -569,5 +612,4 @@ footer {
     background-color: #1e3a8a;
     color: #fff;
   }
-
 }
