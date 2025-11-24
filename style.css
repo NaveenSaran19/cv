@@ -296,92 +296,62 @@ section h2:hover::after {
   color: #1e3a8a;
 }
 
-/* Experience Section - Fixed & Improved Timeline */
+/* Experience Section */
 .timeline {
-  position: relative;
-  padding-left: 4rem; /* Increased to give enough space for the dot */
-  max-width: 1000px;
-  margin: 0 auto;
+  position: relative;
+  padding-left: 3.5rem;
 }
-
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 1.5rem;           /* This positions the line */
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, #facc15, #1e3a8a);
-  border-radius: 2px;
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(to bottom, #facc15, #1e3a8a);
 }
-
 .timeline-item {
-  position: relative;
-  margin-bottom: 3.5rem;
+  position: relative;
+  margin-bottom: 3rem;
 }
-
-/* Year label */
 .timeline-year {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #facc15;
-  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #facc15;
+  margin-bottom: 0.8rem;
 }
-
-/* Dot perfectly centered on the line */
 .timeline-dot {
-  position: absolute;
-  left: -2.28rem;         /* (1.5rem line position) - (dot width/2 + border) */
-  top: 0.6rem;
-  width: 18px;
-  height: 18px;
-  background-color: #fef3c7;
-  border: 4px solid #1e3a8a;
-  border-radius: 50%;
-  z-index: 1;
-  transition: transform 0.3s ease;
+  position: absolute;
+  left: -2rem;
+  top: 0.6rem;
+  width: 16px;
+  height: 16px;
+  background-color: #fef3c7;
+  border-radius: 50%;
+  border: 3px solid #1e3a8a;
+  transition: transform 0.3s ease;
 }
-
-/* Hover effect on dot */
 .timeline-item:hover .timeline-dot {
-  transform: scale(1.4);
-  background-color: #fbbf24;
+  transform: scale(1.3);
 }
-
-/* Content card */
 .timeline-content {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease;
-  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
 }
-
 .timeline-content:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateX(15px);
 }
-
 .timeline-content h3 {
-  font-size: 1.6rem;
-  color: #1e3a8a;
-  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  color: #1e3a8a;
+  margin-bottom: 0.8rem;
 }
-
 .timeline-content p {
-  font-size: 1.1rem;
-  color: #4b5563;
-  margin-bottom: 0.5rem;
-}
-
-/* Optional: Connect the first and last items nicely */
-.timeline-item:first-child .timeline-dot {
-  top: 0.8rem;
-}
-
-.timeline-item:last-child {
-  margin-bottom: 0;
+  font-size: 1.1rem;
+  color: #4b5563;
 }
 
 /* Contact Section */
